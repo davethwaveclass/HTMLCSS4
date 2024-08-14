@@ -3,42 +3,51 @@ html, body, h1, h2, h3, p, ol, ul, li, a { padding: 0; border: 0; margin: 0; fon
 #leftSide {
   padding: 20px;
   background-color: #def;
-  float: left;
+}
+
+html,body {
+  height:100%;
 }
 
 #rightSide {
   padding: 20px;
   background-color: #fde;
-  float: right;
 }
 
 #problem2 {
-  clear: both;
-  text-align: center;
-}
-
-#cardsContainer {
-  display: inline-block;
+  text-align:center;
+  list-style-type:none;
+  margin:0;padding:0;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  width:700px;
+  height:500px;
 }
 
 .card {
-  padding: 20px;
   background-color: #dfd;
-  margin-right: 10px;
-  margin-top: 10px;
-  float: left;
-  border: 3px solid yellow;
-  padding: 100px 8px;
+  display:flex;
   z-index: 1;
 }
+
+ul{
+  list-style-type: none;
+}
+
+ul li:first-child { background: #c2d775;}
+ul li:nth-child(2) { background: #007278;}
+ul li:nth-child(3) { background: #c7b600;}
+ul li:nth-child(4) { background: #03a900;}
 
 .card2 {
   padding: 2px;
   background-color: rgb(229, 255, 0);
-  margin-right: 10px;
   margin-top: 10px;
-  border: 3px solid yellow;
   z-index: 2;
+  display:flex;
 }
 
 #mainBackground {
@@ -46,19 +55,14 @@ html, body, h1, h2, h3, p, ol, ul, li, a { padding: 0; border: 0; margin: 0; fon
 }
 
 #textContainer {
-  padding: 20px;
+  padding: 10px;
   width: 500px;
   margin: 0 auto;
 }
 
-.left{
-  float: left;
+.middle{
+  display:flex;
   position: relative;
   top: -9px;
-}
-
-.right{
-  float: right;
-  position: relative;
-  top: -9px;
+  justify-content:space-between;
 }
